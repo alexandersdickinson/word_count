@@ -1,10 +1,10 @@
 class String
   def word_count(word)
-    word.upcase!()
+    comp1 = word.upcase()
     sentence = self.split(' ')
     count = 0
-    sentence.each do |comp|
-      count = count + 1 if comp.upcase() == word
+    sentence.each do |comp2|
+      count = count + 1 if comp1 == comp2.upcase()
     end
     count
   end
